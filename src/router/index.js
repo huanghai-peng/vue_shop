@@ -1,16 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from 'views/login/Login.vue'
-import Home from 'views/home/Home.vue'
-import Users from 'views/users/Users.vue'
-import Roles from 'views/roles/Roles.vue'
-import Rights from 'views/rights/Rights.vue'
-import Goods from 'views/goods/Goods.vue'
-import Params from 'views/params/Params.vue'
-import Categories from 'views/categories/Categories.vue'
-import Orders from 'views/orders/Orders.vue'
-import Reports from 'views/reports/Reports.vue'
-import add from 'views/add/Add.vue'
+
+const Login = () =>
+    import ('views/login/Login.vue')
+
+const Home = () =>
+    import ('views/home/Home.vue')
+
+const Users = () =>
+    import ('views/users/Users.vue')
+
+const Roles = () =>
+    import ('views/roles/Roles.vue')
+
+const Rights = () =>
+    import ('views/rights/Rights.vue')
+
+const Goods = () =>
+    import ('views/goods/Goods.vue')
+const Params = () =>
+    import ('views/params/Params.vue')
+const Categories = () =>
+    import ('views/categories/Categories.vue')
+const Orders = () =>
+    import ('views/orders/Orders.vue')
+const Reports = () =>
+    import ('views/reports/Reports.vue')
+const add = () =>
+    import ('views/add/Add.vue')
 
 Vue.use(VueRouter)
 
